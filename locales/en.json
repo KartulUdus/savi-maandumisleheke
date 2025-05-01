@@ -1,0 +1,30 @@
+{
+    "brand.name": "LinguaLift",
+  
+    "nav.features": "Features",
+    "nav.code": "Code",
+    "nav.contact": "Contact",
+    "nav.getStarted": "Get started",
+  
+    "hero.title": "Translate Everything<br>in a Single Commit",
+    "hero.subtitle": "Ship multi-lingual sites, docs & codebases without changing your workflow. LinguaLift watches your repo and keeps every language in sync.",
+    "hero.cta": "Start Free",
+  
+    "features.title": "Why developers love LinguaLift",
+    "features.sync.title": "1-Click Repo Sync",
+    "features.sync.desc": "Connect GitHub or GitLab and we auto-detect text in code, markdown & HTML, pushing translations on each commit.",
+    "features.lockin.title": "Zero Vendor Lock-in",
+    "features.lockin.desc": "All translated files live in your repo. Swap providers anytime — your history stays with you.",
+    "features.quality.title": "AI + Human Quality",
+    "features.quality.desc": "Cut costs with our hybrid pipeline: instant neural machine translations reviewed by a crowd of native speakers.",
+  
+    "code.title": "Install via CLI",
+    "code.snippet": "$ npm i -g lingualift\\n$ lingualift init\\n? Link your repository (Y/n) y\\n? Default language [en]: en\\n? Target languages (comma separated): es, fr, zh\\n✨ Done! Continuous translation is now live.",
+  
+    "contact.title": "Let's build a borderless web",
+    "contact.subtitle": "Have questions or need a custom plan? Leave your email and our team will reach out.",
+    "contact.cta": "Notify me",
+  
+    "footer.text": "© {{year}} LinguaLift. Crafted with 💜 in Tallinn."
+  }
+  

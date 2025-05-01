@@ -1,0 +1,30 @@
+{
+    "brand.name": "LinguaLift",
+  
+    "nav.features": "Funktsioonid",
+    "nav.code": "Kood",
+    "nav.contact": "Kontakt",
+    "nav.getStarted": "Alusta",
+  
+    "hero.title": "Tõlgi kõik<br>üheainsa commit'iga",
+    "hero.subtitle": "Avalda mitmekeelsed saidid, dokumendid ja kood ilma töövoogu muutmata. LinguaLift jälgib sinu repot ja hoiab kõik keeled sünkroonis.",
+    "hero.cta": "Alusta tasuta",
+  
+    "features.title": "Miks arendajad armastavad LinguaLifti",
+    "features.sync.title": "1-kliki repo-sünkro",
+    "features.sync.desc": "Ühenda GitHub või GitLab ja me tuvastame automaatselt teksti koodis, Markdownis ja HTML-is ning lükkame tõlked iga commit'iga.",
+    "features.lockin.title": "Ilma tarnijast sõltuvuseta",
+    "features.lockin.desc": "Kõik tõlgitud failid asuvad sinu repot. Vaheta teenusepakkujat igal ajal — ajalugu jääb alles.",
+    "features.quality.title": "Tehisintellekt + inimkvaliteet",
+    "features.quality.desc": "Vähenda kulusid meie hübriidtoruga: kohesed närvivõrgu tõlked, mida kontrollivad emakeelsed kõnelejad.",
+  
+    "code.title": "Paigalda CLI kaudu",
+    "code.snippet": "$ npm i -g lingualift\\n$ lingualift init\\n? Link your repository (Y/n) y\\n? Default language [en]: en\\n? Target languages (comma separated): es, fr, zh\\n✨ Done! Continuous translation is now live.",
+  
+    "contact.title": "Loome piiritu veebi",
+    "contact.subtitle": "Küsimusi või vajad kohandatud paketti? Jäta oma e-post ja meie tiim võtab ühendust.",
+    "contact.cta": "Teavita mind",
+  
+    "footer.text": "© {{year}} LinguaLift. Valmistatud 💜 Tallinnas."
+  }
+  

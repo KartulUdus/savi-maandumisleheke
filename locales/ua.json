@@ -1,0 +1,30 @@
+{
+    "brand.name": "LinguaLift",
+  
+    "nav.features": "Функції",
+    "nav.code": "Код",
+    "nav.contact": "Контакт",
+    "nav.getStarted": "Почати",
+  
+    "hero.title": "Перекладайте все<br>одним комітом",
+    "hero.subtitle": "Публікуйте багатомовні сайти, документацію та код без зміни робочого процесу. LinguaLift стежить за вашим репозиторієм і тримає всі мови синхронізованими.",
+    "hero.cta": "Спробувати безкоштовно",
+  
+    "features.title": "Чому розробники люблять LinguaLift",
+    "features.sync.title": "Синхронізація репо в 1 клік",
+    "features.sync.desc": "Під’єднайте GitHub чи GitLab, і ми автоматично знайдемо текст у коді, Markdown та HTML, надсилаючи переклади з кожним комітом.",
+    "features.lockin.title": "Без vendor-lock-in",
+    "features.lockin.desc": "Усі перекладені файли зберігаються у вашому репозиторії. Змінюйте провайдерів у будь-який час — історія залишиться з вами.",
+    "features.quality.title": "ШІ + людська якість",
+    "features.quality.desc": "Зменшуйте витрати завдяки гібридному конвеєру: миттєві переклади нейромережі перевіряють носії мови.",
+  
+    "code.title": "Встановлення через CLI",
+    "code.snippet": "$ npm i -g lingualift\\n$ lingualift init\\n? Link your repository (Y/n) y\\n? Default language [en]: en\\n? Target languages (comma separated): es, fr, zh\\n✨ Done! Continuous translation is now live.",
+  
+    "contact.title": "Будуймо веб без кордонів",
+    "contact.subtitle": "Є запитання чи потрібен індивідуальний тариф? Залиште email, і ми зв'яжемося.",
+    "contact.cta": "Повідомити мене",
+  
+    "footer.text": "© {{year}} LinguaLift. Створено з 💜 у Таллінні."
+  }
+  

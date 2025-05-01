@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🤖 CopyrightSafeCompanyName 🤖 – Universal Translation for Developers</title>
+  <title>LinguaLift – Universal Translation for Developers</title>
   <!-- Tailwind via CDN for quick styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +17,26 @@
   <!-- Navigation -->
   <header class="fixed w-full bg-white/70 backdrop-blur z-30 shadow-sm">
     <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <a href="#" class="text-2xl font-bold text-indigo-600">🤖 CopyrightSafeCompanyName 🤖</a>
+      <a href="#" class="text-2xl font-bold text-indigo-600" data-i18n="brand.name">LinguaLift</a>
       <nav>
         <button id="menu-btn" class="md:hidden" aria-label="Open main menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <ul id="nav-links" class="hidden md:flex gap-6 font-medium">
-          <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
-          <li><a href="#code" class="hover:text-indigo-600">Code</a></li>
-          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-          <li><a href="#get-started" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition">Get started</a></li>
+        <ul id="nav-links" class="hidden md:flex gap-6 font-medium items-center">
+          <li><a href="#features" class="hover:text-indigo-600" data-i18n="nav.features">Features</a></li>
+          <li><a href="#code" class="hover:text-indigo-600" data-i18n="nav.code">Code</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="#get-started" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition" data-i18n="nav.getStarted">Get started</a></li>
+          <li>
+            <!-- Update: include ET and UA options as requested -->
+            <select id="lang-select" class="bg-gray-100 border border-gray-300 rounded-lg px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="en">EN</option>
+              <option value="et">ET</option>
+              <option value="ua">UA</option>
+            </select>
+          </li>
         </ul>
       </nav>
     </div>
@@ -42,9 +50,9 @@
   <!-- Hero Section -->
   <section class="pt-28 pb-20 bg-gradient-to-br from-indigo-50 to-white">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-indigo-600 to-purple-600">Translate Everything<br>in a Single Commit</h1>
-      <p class="mt-6 text-lg md:text-xl text-gray-600">Ship multi‑lingual sites, docs &amp; codebases without changing your workflow. 🤖 CopyrightSafeCompanyName 🤖 watches your repo and keeps every language in sync.</p>
-      <a href="#get-started" class="mt-8 inline-block bg-indigo-600 text-white text-lg font-semibold px-8 py-4 rounded-lg shadow hover:shadow-lg hover:bg-indigo-700 transition">Start Free</a>
+      <h1 class="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-indigo-600 to-purple-600" data-i18n="hero.title">Translate Everything<br>in a Single Commit</h1>
+      <p class="mt-6 text-lg md:text-xl text-gray-600" data-i18n="hero.subtitle">Ship multi‑lingual sites, docs &amp; codebases without changing your workflow. LinguaLift watches your repo and keeps every language in sync.</p>
+      <a href="#get-started" class="mt-8 inline-block bg-indigo-600 text-white text-lg font-semibold px-8 py-4 rounded-lg shadow hover:shadow-lg hover:bg-indigo-700 transition" data-i18n="hero.cta">Start Free</a>
       <div class="mt-12">
         <img src="https://source.unsplash.com/collection/404339/1200x600" alt="International collaboration" class="rounded-2xl shadow-lg mx-auto">
       </div>
@@ -54,29 +62,28 @@
   <!-- Features -->
   <section id="features" class="py-20">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why developers love 🤖 CopyrightSafeCompanyName 🤖</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-i18n="features.title">Why developers love LinguaLift</h2>
       <div class="grid md:grid-cols-3 gap-10">
         <div class="p-6 rounded-2xl shadow hover:shadow-lg transition">
           <div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4">
-            <!-- Icon -->
             <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m0 12v2m6.048-9.852l3.6 3.6m0 0l-3.6 3.6m3.6-3.6H15"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">1‑Click Repo Sync</h3>
-          <p>Connect GitHub or GitLab and we auto‑detect text in code, markdown &amp; HTML, pushing translations on each commit.</p>
+          <h3 class="text-xl font-semibold mb-2" data-i18n="features.sync.title">1‑Click Repo Sync</h3>
+          <p data-i18n="features.sync.desc">Connect GitHub or GitLab and we auto‑detect text in code, markdown &amp; HTML, pushing translations on each commit.</p>
         </div>
         <div class="p-6 rounded-2xl shadow hover:shadow-lg transition">
           <div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4">
             <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0-3.866 3.582-7 8-7M12 11v8m0 0l-4-4m4 4l4-4"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Zero Vendor Lock‑in</h3>
-          <p>All translated files live in your repo. Swap providers anytime — your history stays with you.</p>
+          <h3 class="text-xl font-semibold mb-2" data-i18n="features.lockin.title">Zero Vendor Lock‑in</h3>
+          <p data-i18n="features.lockin.desc">All translated files live in your repo. Swap providers anytime — your history stays with you.</p>
         </div>
         <div class="p-6 rounded-2xl shadow hover:shadow-lg transition">
           <div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4">
             <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 8a6 6 0 10-12 0M3 20h18"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">AI + Human Quality</h3>
-          <p>Cut costs with our hybrid pipeline: instant neural machine translations reviewed by a crowd of native speakers.</p>
+          <h3 class="text-xl font-semibold mb-2" data-i18n="features.quality.title">AI + Human Quality</h3>
+          <p data-i18n="features.quality.desc">Cut costs with our hybrid pipeline: instant neural machine translations reviewed by a crowd of native speakers.</p>
         </div>
       </div>
     </div>
@@ -85,10 +92,10 @@
   <!-- Code Snippet -->
   <section id="code" class="py-20 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Install via CLI</h2>
-      <pre class="rounded-2xl bg-gray-900 text-green-400 p-6 overflow-x-auto text-sm md:text-base"><code>
-$ npm i -g 🤖 CopyrightSafeCompanyName 🤖
-$ 🤖 CopyrightSafeCompanyName 🤖 init
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-i18n="code.title">Install via CLI</h2>
+      <pre class="rounded-2xl bg-gray-900 text-green-400 p-6 overflow-x-auto text-sm md:text-base"><code data-i18n="code.snippet">
+$ npm i -g lingualift
+$ lingualift init
 ? Link your repository (Y/n) y
 ? Default language [en]: en
 ? Target languages (comma separated): es, fr, zh
@@ -100,30 +107,79 @@ $ 🤖 CopyrightSafeCompanyName 🤖 init
   <!-- Contact -->
   <section id="contact" class="py-20">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's build a borderless web</h2>
-      <p class="text-gray-600 mb-8">Have questions or need a custom plan? Leave your email and our team will reach out.</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-i18n="contact.title">Let's build a borderless web</h2>
+      <p class="text-gray-600 mb-8" data-i18n="contact.subtitle">Have questions or need a custom plan? Leave your email and our team will reach out.</p>
       <form class="flex flex-col md:flex-row gap-4 justify-center">
         <input type="email" required placeholder="you@example.com" class="w-full md:flex-1 px-4 py-3 rounded-lg shadow border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">Notify me</button>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition" data-i18n="contact.cta">Notify me</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 bg-gray-100 text-center text-sm text-gray-500">
-    © <span id="year"></span> 🤖 CopyrightSafeCompanyName 🤖. Crafted with 💜 in Tallinn.
+  <footer class="py-6 bg-gray-100 text-center text-sm text-gray-500" data-i18n="footer.text">
+    © <span id="year"></span> LinguaLift. Crafted with 💜 in Tallinn.
   </footer>
 
-  <!-- Small helper scripts -->
+  <!-- Helper & i18n scripts -->
   <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Demo form handler (replace with real backend)
+
+    // Demo form handler
     const form = document.querySelector('form');
     form.addEventListener('submit', e => {
       e.preventDefault();
       alert('Thanks! We will be in touch soon.');
       form.reset();
     });
+
+    //--------------------------------------------------------------------
+    // Simple i18n implementation
+    //--------------------------------------------------------------------
+
+    const langSelect = document.getElementById('lang-select');
+    // Build supportedLanguages array automatically from <select> options
+    const supportedLanguages = Array.from(langSelect.options).map(opt => opt.value);
+    const defaultLang = 'en';
+
+    // Determine initial language
+    let currentLang = localStorage.getItem('lang') || navigator.language.slice(0,2) || defaultLang;
+    if(!supportedLanguages.includes(currentLang)) currentLang = defaultLang;
+
+    // Initialise
+    langSelect.value = currentLang;
+    loadLang(currentLang);
+
+    // Handle manual switch
+    langSelect.addEventListener('change', e => loadLang(e.target.value));
+
+    //------------------------------------------------------------------
+    async function loadLang(lang){
+      try{
+        // Always clear console noise from previous attempts
+        console.log(`Loading locale: ${lang}`);
+        // Fetch the JSON — works when served over HTTP(S). If you are opening
+        // the file directly via file:// and it fails, run a tiny local server:
+        //   npx serve .   -or-  python -m http.server
+        const res = await fetch(`./locales/${lang}.json`);
+        if(!res.ok) throw new Error(res.statusText);
+        const translations = await res.json();
+        translatePage(translations);
+        document.documentElement.lang = lang;
+        localStorage.setItem('lang', lang);
+      }catch(err){
+        console.warn(`Could not load language "${lang}":`, err.message);
+        if(lang !== defaultLang) loadLang(defaultLang);
+      }
+    }
+
+    function translatePage(dict){
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if(dict[key]) el.innerHTML = dict[key].replace('{{year}}', new Date().getFullYear());
+      });
+    }
+  });
   </script>
-</body>
-</html>
